@@ -1,7 +1,9 @@
-[![Build Status](https://travis-ci.org/justinrolston/eventually_helper.svg?branch=master)](https://travis-ci.org/justinrolston/eventually_helper)
 # EventuallyHelper
 
-TODO: Write a gem description
+[![Build Status](https://travis-ci.org/justinrolston/eventually_helper.svg?branch=master)](https://travis-ci.org/justinrolston/eventually_helper)
+
+
+A simple gem that will run code in a block and if an error is thrown in the block it will be catch and the code will re-execute until it runs without error or the timeout is met in which the an error will be thrown.
 
 ## Installation
 
