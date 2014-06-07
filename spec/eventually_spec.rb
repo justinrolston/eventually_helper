@@ -4,6 +4,9 @@ describe 'EventuallyHelper' do
   include EventuallyHelper
 
   it 'test' do
-    eventually { 'test' == 'test' }
+    @test = ''
+    outcome = 'test'
+    eventually { @test = outcome }
+    expect(@test).to eq outcome
   end
 end
