@@ -5,7 +5,8 @@ describe 'EventuallyHelper' do
 
   it 'test' do
     @test = ''
-    eventually { @test = 'test' }
-    @test.should == 'test2'
+    outcome = 'test'
+    eventually { @test = outcome }
+    expect(@test).to eq outcome
   end
 end
