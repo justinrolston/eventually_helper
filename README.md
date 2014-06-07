@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/justinrolston/eventually_helper.svg?branch=master)](https://travis-ci.org/justinrolston/eventually_helper)
 # EventuallyHelper
 
 TODO: Write a gem description
