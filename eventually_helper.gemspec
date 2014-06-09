@@ -8,10 +8,10 @@ Gem::Specification.new do |spec|
   spec.version       = EventuallyHelper::VERSION
   spec.authors       = ["Justin Rolston"]
   spec.email         = ["justinrolston@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+  spec.summary       = %q{eventually_helper is a simple test helper}
+  spec.description   = %q{}
+  spec.homepage      = 'https://github.com/justinrolston/eventually_helper'
+  spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
