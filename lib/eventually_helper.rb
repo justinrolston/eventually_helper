@@ -8,7 +8,7 @@ module EventuallyHelper
     loop do
       begin
         yield
-      rescue => error
+      rescue StandardError, RSpec::Expectations::ExpectationNotMetError => error
       end
       return if error.nil?
       raise error if Time.now >= time_limit
