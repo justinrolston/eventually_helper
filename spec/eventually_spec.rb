@@ -11,12 +11,12 @@ describe 'EventuallyHelper' do
   end
 
   it 'can attach to expect statements' do
-    @test = ->{
+    @test = lambda do
       responses = %w(duck duck goose goose).cycle
-      ->{ responses.next }
-    }.call
+      -> { responses.next }
+    end.call
     outcome = 'goose'
 
-    eventually_expect{ @test.call == outcome }.to be true
+    eventually_expect { @test.call == outcome }.to be true
   end
 end

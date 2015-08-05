@@ -16,8 +16,8 @@ module EventuallyHelper
     end
   end
 
-  def eventually_expect &assertion
-    eventually{raise unless assertion.call}
+  def eventually_expect(&assertion)
+    eventually { raise unless assertion.call }
     expect(assertion.call)
   end
 end
