@@ -22,6 +22,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
+include EventuallyHelper
 eventually { click_on "Menu" }
 eventually(timeout: 3) { assert_text "Success" } # defaults to 10 seconds
 eventually(interval: 0.01) { assert_text "Sent" } # defaults to 0.1 seconds
